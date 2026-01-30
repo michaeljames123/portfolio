@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael James A. Nazareno | Web Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8'
+            }
+          }
+        }
+      }
+    };
+  </script>
+ </head>
+<body class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-50 antialiased">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 opacity-40">
+      <div class="absolute -left-40 top-0 h-72 w-72 rounded-full bg-primary-600/70 blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-sky-500/70 blur-3xl animate-pulse"></div>
+    </div>
+
+    <header class="relative border-b border-slate-800/60 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90 backdrop-blur shadow-lg shadow-slate-950/60">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <div class="text-sm font-semibold tracking-wide text-slate-200">
+          <span class="text-primary-400">MJ</span> Nazareno
+        </div>
+        <button id="nav-toggle" class="inline-flex items-center rounded-md border border-slate-700 px-3 py-1 text-xs font-medium text-slate-200 hover:border-primary-500 hover:text-primary-300 sm:hidden">
+          Menu
+        </button>
+        <nav id="nav-menu" class="absolute inset-x-0 top-full z-20 hidden flex-col gap-2 border-b border-slate-800 bg-slate-950 px-6 py-3 text-xs font-medium sm:static sm:z-auto sm:flex sm:flex-row sm:items-center sm:justify-end sm:border-none sm:bg-transparent sm:p-0 sm:text-[0.8rem] sm:space-x-4">
+          <a href="#profile" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Profile</a>
+          <a href="#education" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Education</a>
+          <a href="#skills" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Skills</a>
+          <a href="#hobbies" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Hobbies</a>
+          <a href="#contact" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Contact</a>
+          <a href="#contact" data-scroll class="mt-1 rounded-full bg-gradient-to-r from-primary-500 to-sky-500 px-3 py-1.5 text-center text-[0.7rem] font-semibold text-slate-50 shadow-md shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sky-500/40 sm:mt-0 sm:ml-3">
+            Hire Me
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="relative mx-auto max-w-5xl px-6 pt-10 pb-16">
+      <section id="profile" data-reveal class="grid items-start gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+        <div class="space-y-6">
+          <span class="inline-flex items-center rounded-full border border-primary-500/40 bg-primary-500/10 px-3 py-1 text-xs font-medium text-primary-100 backdrop-blur">
+            Web Developer - IT Student
+          </span>
+          <div class="space-y-3">
+            <h1 class="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">
+              MICHAEL JAMES A. NAZARENO
+            </h1>
+            <p class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">
+              Web Developer
+            </p>
+          </div>
+          <p class="max-w-xl text-sm leading-relaxed text-slate-200">
+            Information Technology student at Holy Cross College of Davao with hands-on experience in software
+            development, networking, and database management. Proficient in Python, Java, and HTML/CSS with
+            foundational knowledge of cybersecurity and IT troubleshooting. A collaborative team player seeking
+            real-world IT challenges.
+          </p>
+          <div class="flex flex-wrap gap-3 text-xs text-slate-200">
+            <div class="flex items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-2">
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+              <span class="font-medium">Open to opportunities</span>
+            </div>
+            <a href="#contact" data-scroll class="rounded-lg bg-gradient-to-r from-primary-500 to-sky-500 px-4 py-2 text-xs font-semibold text-slate-50 shadow-lg shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-sky-500/40">
+              Get in touch
+            </a>
+          </div>
+        </div>
+
+        <aside class="space-y-4 rounded-2xl border border-slate-800/80 bg-slate-900/80 p-5 shadow-xl shadow-slate-950/70 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-primary-600/30">
+          <div class="space-y-1">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-400">LOCATION</h2>
+            <p class="text-sm font-medium text-slate-100">
+              Km 11 Zone 3 Sasa, Davao City, Philippines
+            </p>
+          </div>
+          <div class="space-y-1">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-400">PHONE</h2>
+            <a href="tel:639217344711" class="text-sm font-medium text-primary-300 hover:text-primary-200">
+              0921 734 4711
+            </a>
+          </div>
+          <div class="space-y-1">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-400">EMAIL</h2>
+            <a href="mailto:michaeljamesnazarenoabrantes@gmail.com" class="break-all text-sm font-medium text-primary-300 hover:text-primary-200">
+              michaeljamesnazarenoabrantes@gmail.com
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="education" data-reveal class="mt-14 space-y-6">
+        <div class="flex items-baseline justify-between gap-4">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
+            Education
+          </h2>
+          <span class="text-[0.7rem] uppercase tracking-[0.24em] text-slate-500">
+            Learning in progress
+          </span>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="col-span-2 space-y-4 rounded-2xl border border-slate-800/80 bg-slate-900/70 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20">
+            <p class="text-xs font-semibold tracking-[0.18em] text-primary-300">CURRENT PROGRAM</p>
+            <h3 class="text-base font-semibold text-slate-50">
+              Bachelor of Science in Information Technology
+            </h3>
+            <p class="text-sm font-medium text-slate-200">Holy Cross College of Davao</p>
+            <p class="text-xs text-slate-400">June 2022 - April 2026</p>
+            <p class="text-xs text-slate-300">
+              Focus areas: software development, networking, database management, and cybersecurity fundamentals.
+            </p>
+          </div>
+          <div class="space-y-4 rounded-2xl border border-slate-800/80 bg-slate-900/70 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20">
+            <p class="text-xs font-semibold tracking-[0.18em] text-slate-400">SENIOR HIGH SCHOOL</p>
+            <h3 class="text-sm font-semibold text-slate-50">
+              Information and Communication Technology (ICT)
+            </h3>
+            <p class="text-xs font-medium text-slate-200">STI College of Davao</p>
+            <p class="text-xs text-slate-400">June 2020 - March 2022</p>
+            <p class="text-xs text-slate-300">
+              ICT strand with emphasis on programming, computer systems servicing, and basic networking.
+            </p>
+          </div>
+        </div>
+        <div class="mt-4 rounded-2xl border border-slate-800/80 bg-slate-900/70 p-5 md:max-w-md transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20">
+          <p class="text-xs font-semibold tracking-[0.18em] text-slate-400">JUNIOR HIGH SCHOOL</p>
+          <h3 class="text-sm font-semibold text-slate-50">F. Bangoy National High School</h3>
+          <p class="text-xs text-slate-400">June 2010 - April 2020</p>
+          <p class="mt-2 text-xs text-slate-300">
+            Built a strong foundation in mathematics, science, and basic computer literacy.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" data-reveal class="mt-14 grid gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.1fr)]">
+        <div class="space-y-6">
+          <div class="flex items-baseline justify-between gap-4">
+            <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
+              Skills
+            </h2>
+            <span class="text-[0.7rem] uppercase tracking-[0.24em] text-emerald-400">
+              Growing every day
+            </span>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+              <p class="text-xs font-semibold tracking-[0.18em] text-primary-300">CORE</p>
+              <ul class="mt-3 space-y-1 text-sm text-slate-100">
+                <li>Coding / Programming</li>
+                <li>Web Development</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+              <p class="text-xs font-semibold tracking-[0.18em] text-primary-300">DESIGN AND OPERATIONS</p>
+              <ul class="mt-3 space-y-1 text-sm text-slate-100">
+                <li>UI / UX Design</li>
+                <li>DevOps (Beginner)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-4 text-xs text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+            <p class="mb-2">
+              Comfortable working with Python, Java, and HTML/CSS, with a strong interest in building clean user
+              interfaces and reliable backend systems.
+            </p>
+            <ul class="space-y-1">
+              <li>- Frontend: semantic HTML, responsive layouts, and basic JavaScript.</li>
+              <li>- Backend & data: Python, Java, and basic SQL/database design.</li>
+              <li>- IT: networking fundamentals, troubleshooting, and cybersecurity awareness.</li>
+              <li>- Tools: Git and GitHub, VS Code, and collaborative workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="hobbies" class="space-y-6">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
+            Hobbies
+          </h2>
+          <div class="grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+              Music
+            </div>
+            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+              Gaming
+            </div>
+            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+              Programming
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-reveal class="mt-16 rounded-2xl border border-slate-800/80 bg-slate-900/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div class="space-y-2">
+            <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
+              Contact
+            </h2>
+            <p class="text-sm text-slate-200">
+              Ready to take on real-world IT and web development projects in Davao City and beyond.
+            </p>
+          </div>
+          <div class="space-y-2 text-sm text-slate-100">
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Phone</span>
+              <div>
+                <a href="tel:639217344711" class="font-medium text-primary-300 hover:text-primary-200">
+                  0921 734 4711
+                </a>
+              </div>
+            </div>
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Email</span>
+              <div>
+                <a href="mailto:michaeljamesnazarenoabrantes@gmail.com" class="break-all font-medium text-primary-300 hover:text-primary-200">
+                  michaeljamesnazarenoabrantes@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-10 flex items-center justify-between text-[0.7rem] text-slate-500">
+        <span>(c) <span id="year"></span> Michael James A. Nazareno</span>
+        <span>Built with HTML, Tailwind CSS, and JavaScript</span>
+      </footer>
+    </main>
+  </div>
+
+  <button id="to-top" class="fixed bottom-6 right-6 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-primary-500 to-sky-500 text-white text-lg shadow-lg shadow-primary-600/40 transition-all duration-300 opacity-0 pointer-events-none hover:-translate-y-0.5 hover:shadow-xl hover:shadow-sky-500/40">
+    ↑
+  </button>
+
+  <script src="./main.js"></script>
+</body>
+</html>
