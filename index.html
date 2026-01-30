@@ -11,12 +11,16 @@
         extend: {
           colors: {
             primary: {
-              50: '#eff6ff',
-              100: '#dbeafe',
-              200: '#bfdbfe',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8'
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9'
+            },
+            accent: {
+              400: '#34d399',
+              500: '#10b981'
             }
           }
         }
@@ -28,7 +32,7 @@
   <div class="relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 opacity-40">
       <div class="absolute -left-40 top-0 h-72 w-72 rounded-full bg-primary-600/70 blur-3xl animate-pulse"></div>
-      <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-sky-500/70 blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-emerald-500/70 blur-3xl animate-pulse"></div>
     </div>
 
     <header class="relative border-b border-slate-800/60 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90 backdrop-blur shadow-lg shadow-slate-950/60">
@@ -43,9 +47,10 @@
           <a href="#profile" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Profile</a>
           <a href="#education" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Education</a>
           <a href="#skills" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Skills</a>
+          <a href="#projects" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Projects</a>
           <a href="#hobbies" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Hobbies</a>
           <a href="#contact" data-scroll data-nav-link class="border-b-2 border-transparent px-1 py-0.5 text-slate-300 transition-colors duration-200 hover:border-primary-500 hover:text-primary-300">Contact</a>
-          <a href="#contact" data-scroll class="mt-1 rounded-full bg-gradient-to-r from-primary-500 to-sky-500 px-3 py-1.5 text-center text-[0.7rem] font-semibold text-slate-50 shadow-md shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sky-500/40 sm:mt-0 sm:ml-3">
+          <a href="#contact" data-scroll class="mt-1 rounded-full bg-gradient-to-r from-primary-500 to-accent-400 px-3 py-1.5 text-center text-[0.7rem] font-semibold text-slate-50 shadow-md shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/40 sm:mt-0 sm:ml-3">
             Hire Me
           </a>
         </nav>
@@ -77,8 +82,11 @@
               <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
               <span class="font-medium">Open to opportunities</span>
             </div>
-            <a href="#contact" data-scroll class="rounded-lg bg-gradient-to-r from-primary-500 to-sky-500 px-4 py-2 text-xs font-semibold text-slate-50 shadow-lg shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-sky-500/40">
+            <a href="#contact" data-scroll class="rounded-lg bg-gradient-to-r from-primary-500 to-accent-400 px-4 py-2 text-xs font-semibold text-slate-50 shadow-lg shadow-primary-600/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald-500/40">
               Get in touch
+            </a>
+            <a href="michael-james-nazareno-resume.pdf" download class="rounded-lg border border-primary-500/70 bg-slate-950/40 px-4 py-2 text-xs font-semibold text-primary-100 shadow-lg shadow-slate-950/60 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-500/10 hover:border-accent-400/80">
+              Download Resume (PDF)
             </a>
           </div>
         </div>
@@ -187,21 +195,84 @@
             </ul>
           </div>
         </div>
+      </section>
 
-        <div id="hobbies" class="space-y-6">
+      <section id="projects" data-reveal class="mt-14 space-y-6">
+        <div class="flex items-baseline justify-between gap-4">
           <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
-            Hobbies
+            Projects
           </h2>
-          <div class="grid gap-3 sm:grid-cols-3">
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
-              Music
+          <span class="text-[0.7rem] uppercase tracking-[0.24em] text-emerald-400">
+            Selected work
+          </span>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="flex flex-col justify-between rounded-2xl border border-slate-800/80 bg-gradient-to-b from-slate-900/90 via-slate-950/90 to-slate-900/90 p-5 shadow-lg shadow-slate-950/70 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/70 hover:shadow-emerald-500/30">
+            <div class="space-y-2">
+              <p class="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-primary-300">AgriDroneV3</p>
+              <h3 class="text-sm font-semibold text-slate-50">Agricultural Drone Project</h3>
+              <p class="text-xs text-slate-300">
+                Prototype system focused on agricultural drone operations, helping manage field monitoring,
+                scheduling, and data collection for smarter farming decisions.
+              </p>
             </div>
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
-              Gaming
+            <div class="mt-4 flex items-center justify-between text-[0.7rem] text-slate-300">
+              <span class="rounded-full bg-slate-900/80 px-2 py-1 text-[0.65rem]">System Project</span>
+              <a href="https://github.com/michaeljames123/agridronev3" target="_blank" rel="noreferrer" class="text-primary-300 hover:text-accent-400">
+                View on GitHub
+              </a>
             </div>
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
-              Programming
+          </article>
+
+          <article class="flex flex-col justify-between rounded-2xl border border-slate-800/80 bg-gradient-to-b from-slate-900/90 via-slate-950/90 to-slate-900/90 p-5 shadow-lg shadow-slate-950/70 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/70 hover:shadow-emerald-500/30">
+            <div class="space-y-2">
+              <p class="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-primary-300">LastWebService</p>
+              <h3 class="text-sm font-semibold text-slate-50">Web Service Experiment</h3>
+              <p class="text-xs text-slate-300">
+                Web service / API-focused project exploring how to expose backend functionality and consume it
+                from a modern web interface.
+              </p>
             </div>
+            <div class="mt-4 flex items-center justify-between text-[0.7rem] text-slate-300">
+              <span class="rounded-full bg-slate-900/80 px-2 py-1 text-[0.65rem]">Web Service</span>
+              <a href="https://github.com/michaeljames123/lastwebservice" target="_blank" rel="noreferrer" class="text-primary-300 hover:text-accent-400">
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between rounded-2xl border border-slate-800/80 bg-gradient-to-b from-slate-900/90 via-slate-950/90 to-slate-900/90 p-5 shadow-lg shadow-slate-950/70 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/70 hover:shadow-emerald-500/30">
+            <div class="space-y-2">
+              <p class="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-primary-300">Freedom of Praise</p>
+              <h3 class="text-sm font-semibold text-slate-50">Church System</h3>
+              <p class="text-xs text-slate-300">
+                Church management concept for organizing members, services, and events, supporting better
+                coordination inside a local church community.
+              </p>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-[0.7rem] text-slate-300">
+              <span class="rounded-full bg-slate-900/80 px-2 py-1 text-[0.65rem]">Management</span>
+              <a href="https://github.com/michaeljames123/churchsystem" target="_blank" rel="noreferrer" class="text-primary-300 hover:text-accent-400">
+                View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="hobbies" data-reveal class="mt-14 space-y-6">
+        <h2 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">
+          Hobbies
+        </h2>
+        <div class="grid gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+            Music
+          </div>
+          <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+            Gaming
+          </div>
+          <div class="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4 text-sm font-medium text-slate-50 transition-all duration-300 hover:-translate-y-1 hover:border-primary-500/60 hover:shadow-lg hover:shadow-primary-600/20">
+            Programming
           </div>
         </div>
       </section>
@@ -244,7 +315,7 @@
     </main>
   </div>
 
-  <button id="to-top" class="fixed bottom-6 right-6 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-primary-500 to-sky-500 text-white text-lg shadow-lg shadow-primary-600/40 transition-all duration-300 opacity-0 pointer-events-none hover:-translate-y-0.5 hover:shadow-xl hover:shadow-sky-500/40">
+  <button id="to-top" class="fixed bottom-6 right-6 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-primary-500 to-accent-400 text-white text-lg shadow-lg shadow-primary-600/40 transition-all duration-300 opacity-0 pointer-events-none hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald-500/40">
     ↑
   </button>
 
